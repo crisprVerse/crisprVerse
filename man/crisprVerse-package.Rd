@@ -4,9 +4,9 @@
 \name{crisprVerse-package}
 \alias{crisprVerse}
 \alias{crisprVerse-package}
-\title{crisprVerse: Collection of R packages for CRISPR gRNA design}
+\title{crisprVerse: Easily install and load the crisprVerse ecosystem for CRISPR gRNA design}
 \description{
-Something
+The crisprVerse is a modular ecosystem of R packages developed for the design and manipulation of CRISPR guide RNAs (gRNAs). All packages share a common language and design principles. This package is designed to make it easy to install and load the core crisprVerse packages in a single step. To learn more about the crisprVerse, visit \url{https://www.github.com/crisprVerse}.
 }
 \seealso{
 Useful links:
