@@ -1,0 +1,29 @@
+Package: crisprVerse
+Title: Collection of R packages for CRISPR gRNA design
+Version: 0.99.00
+Authors@R: c(
+    person("Jean-Philippe", "Fortin", email = "fortin946@gmail.com", role = c("aut", "cre"))
+    )
+Description: 
+    Something
+Depends: R (>= 4.2.0)
+Imports:
+    crisprBase,
+    crisprBowtie,
+    crisprScore,
+    crisprDesign
+Suggests:
+    BiocStyle,
+    crisprBwa,
+    knitr,
+    testthat
+biocViews:
+    CRISPR,
+    FunctionalGenomics,
+    GeneTarget
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.2.0
+VignetteBuilder: knitr
+BugReports: https://github.com/crisprVerse/crisprVerse/issues
+URL: https://github.com/crisprVerse/crisprVerse
