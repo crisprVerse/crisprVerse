@@ -1,0 +1,60 @@
+---
+title: "crisprVerse: ecosystem of R packages for CRISPR gRNA design"
+author: 
+- name: Jean-Philippe Fortin
+  affiliation: Data Science and Statistical Computing, gRED, Genentech
+  email: fortin946@gmail.com
+- name: Luke Hoberecht
+  affiliation: Data Science and Statistical Computing, gRED, Genentech
+  email: lukehob3@gmail.com
+date: "`r Sys.Date()`"
+output: 
+  BiocStyle::html_document:
+    toc_float: true
+    number_sections: true
+vignette: >
+  %\VignetteIndexEntry{crisprVerse}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+
+# Installation and getting started
+
+The crisprVerse is a collection of packages for CRISPR guide RNA (gRNA) design
+that can easily be installed with a single package, which is called
+`crisprVerse". This provides a convenient way of downloading and installing all crisprVerse packages with a single R command:
+
+```{r, eval = FALSE}
+install.packages("devtools")
+devtools::install_github("Jfortin1/crisprVerse")
+```
+
+The core crisprVerse includes the packages that are commonly used for gRNA design, adn are attached when you attach the `crisprVerse` package:
+
+```{r}
+library(crisprVerse)
+```
+
+
+# Components
+
+The following packages are installed and loaded with the `crisprVerse` package: 
+
+
+* [crisprBase](https://github.com/Jfortin1/crisprBase) to specify and manipulate CRISPR nucleases.
+* [crisprBowtie](https://github.com/Jfortin1/crisprBowtie) to perform gRNA spacer sequence
+alignment with Bowtie.
+* [crisprScore](https://github.com/Jfortin1/crisprScore) to annotate gRNAs with on-target
+and off-target scores.
+* [crisprDesign](https://github.com/Jfortin1/crisprDesign) to design and manipulate gRNAs
+with `GuideSet` objects. 
+
+# Reproducibility
+
+```{r}
+sessionInfo()
+```
+
+
+

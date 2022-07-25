@@ -1,6 +1,6 @@
 pkgs <- c("crisprBase",
-          "crisprScore",
           "crisprBowtie",
+          "crisprScore",
           "crisprDesign")
 
 pkgs_unloaded <- function(){
