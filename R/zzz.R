@@ -1,5 +1,7 @@
+# Similar to the tidyverse package zzz.R file
+
 .onAttach <- function(...) {
-    needed <- pkgs[!is.attached(pkgs)]
+    needed <- core[!is.attached(core)]
     if (length(needed) == 0){
         return()
     }

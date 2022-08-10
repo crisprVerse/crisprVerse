@@ -1,11 +1,13 @@
-pkgs <- c("crisprBase",
+# Similar to the tidyverse package attach.R file
+
+core <- c("crisprBase",
           "crisprBowtie",
           "crisprScore",
           "crisprDesign")
 
-pkgs_unloaded <- function(){
-    search <- paste0("package:", pkgs)
-    pkgs[!search %in% search()]
+core_unloaded <- function(){
+    search <- paste0("package:", core)
+    core[!search %in% search()]
 }
 
 
@@ -18,7 +20,7 @@ loadPackage <- function(pkg) {
 }
 
 crisprVerse_attach <- function() {
-    pkgsToLoad <- pkgs_unloaded()
+    pkgsToLoad <- core_unloaded()
     if (length(pkgsToLoad) == 0){
         return(invisible())
     }

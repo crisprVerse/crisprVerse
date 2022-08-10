@@ -13,13 +13,15 @@ Description:
     visit <https://www.github.com/crisprVerse>.
 Depends: R (>= 4.2.0)
 Imports:
+    BiocManager,
     crisprBase,
     crisprBowtie,
     crisprScore,
-    crisprDesign
+    crisprDesign,
+    rlang,
+    cli
 Suggests:
     BiocStyle,
-    crisprBwa,
     knitr,
     testthat
 biocViews:
@@ -28,7 +30,7 @@ biocViews:
     GeneTarget
 License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
 VignetteBuilder: knitr
 BugReports: https://github.com/crisprVerse/crisprVerse/issues
 URL: https://github.com/crisprVerse/crisprVerse

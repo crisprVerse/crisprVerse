@@ -18,20 +18,34 @@ Date: July 25, 2022
 # Installation and getting started
 
 The crisprVerse is a collection of packages for CRISPR guide RNA (gRNA) design
-that can easily be installed with a single package, which is called
-`crisprVerse". This provides a convenient way of downloading and installing all crisprVerse packages with a single R command:
+that can easily be installed with the `crisprVerse` package. This provides 
+a convenient way of downloading and installing all crisprVerse packages 
+with a single R command. 
 
-```{r, eval = FALSE}
-install.packages("devtools")
-devtools::install_github("Jfortin1/crisprVerse")
+The package can be installed from Bioconductor using the following
+commands in an R session:
+
+```{r, eval=FALSE}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("crisprVerse")
 ```
 
-The core crisprVerse includes the packages that are commonly used for gRNA design, adn are attached when you attach the `crisprVerse` package:
+The core crisprVerse includes the packages that are commonly used for 
+gRNA design, and are attached when you attach the `crisprVerse` package:
 
 ```{r}
 library(crisprVerse)
 ```
 
+
+You can check that all crisprVerse packages are up-to-date with 
+`crisprVerse_update()`:
+
+```{r}
+crisprVerse_update()
+```
 
 # Components
 
