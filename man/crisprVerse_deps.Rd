@@ -10,6 +10,14 @@ crisprVerse_deps(recursive = FALSE)
 \item{recursive}{If \code{TRUE}, will also list all dependencies of
 crisprVerse packages.}
 }
+\value{
+A data.frame describing crisprVerse dependencies
+}
 \description{
 List all crisprVerse dependencies
+}
+\examples{
+if (interactive()){
+    crisprVerse_deps()
+}
 }

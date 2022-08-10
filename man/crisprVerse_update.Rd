@@ -10,6 +10,9 @@ crisprVerse_update(recursive = FALSE)
 \item{recursive}{If \code{TRUE}, will also list all dependencies of
 crisprVerse packages.}
 }
+\value{
+Print messages to console as a side effect.
+}
 \description{
 This will check to see if all crisprVerse packages (and optionally, their
 dependencies) are up-to-date, and will install after an interactive

@@ -43,12 +43,9 @@ gRNA design, and are attached when you attach the `crisprVerse` package:
 library(crisprVerse)
 ```
 
-You can check that all crisprVerse packages are up-to-date with 
-`crisprVerse_update()`:
+You can check that all crisprVerse packages are up-to-date 
+with the function `crisprVerse_update()`.
 
-```{r}
-crisprVerse_update()
-```
 
 
 # Components

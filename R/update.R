@@ -3,6 +3,8 @@
 #' This will check to see if all crisprVerse packages (and optionally, their
 #' dependencies) are up-to-date, and will install after an interactive
 #' confirmation.
+#' 
+#' @return Print messages to console as a side effect.
 #'
 #' @inheritParams crisprVerse_deps
 #' @export
@@ -43,10 +45,17 @@ crisprVerse_update <- function(recursive=FALSE){
 #'
 #' @param recursive If \code{TRUE}, will also list all dependencies of
 #'   crisprVerse packages.
+#' 
+#' @return A data.frame describing crisprVerse dependencies 
+#' 
 #' @export
 #' @importFrom utils available.packages
 #' @importFrom tools package_dependencies
 #' @importFrom BiocManager repositories
+#' @examples
+#' if (interactive()){
+#'     crisprVerse_deps()
+#' }
 crisprVerse_deps <- function(recursive = FALSE){
     repos <- suppressMessages(BiocManager::repositories())
     pkgs <- utils::available.packages(repos = repos)
@@ -54,9 +63,10 @@ crisprVerse_deps <- function(recursive = FALSE){
 
     pkg_deps <- unique(sort(unlist(deps)))
 
-    base_pkgs <- c("base", "compiler", "datasets", "graphics", "grDevices", "grid",
-                   "methods", "parallel", "splines", "stats", "stats4", "tools", "tcltk",
-                   "utils", "stringr", "readr", "BiocManager", "rlang", "cli")
+    base_pkgs <- c("base", "compiler", "datasets", "graphics", "grDevices",
+                   "grid", "methods", "parallel", "splines", "stats", 
+                   "stats4", "tools", "tcltk", "utils", "stringr", 
+                   "readr", "BiocManager", "rlang", "cli")
     pkg_deps <- setdiff(pkg_deps, base_pkgs)
 
     bioc_version <- lapply(pkgs[pkg_deps, "Version"], base::package_version)
@@ -80,6 +90,8 @@ crisprVerse_deps <- function(recursive = FALSE){
                       behind = behind)
     return(out)
 }
+
+
 
 #' @importFrom utils packageVersion
 #' @importFrom rlang is_installed

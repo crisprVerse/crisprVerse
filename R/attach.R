@@ -19,7 +19,7 @@ loadPackage <- function(pkg) {
                             warn.conflicts=FALSE))
 }
 
-crisprVerse_attach <- function() {
+crisprVerse_attach <- function(){
     pkgsToLoad <- core_unloaded()
     if (length(pkgsToLoad) == 0){
         return(invisible())
