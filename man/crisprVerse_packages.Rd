@@ -9,6 +9,9 @@ crisprVerse_packages(include_self = TRUE)
 \arguments{
 \item{include_self}{Include crisprVerse in the list?}
 }
+\value{
+A character vector of packages in the crisprVerse
+}
 \description{
 List all packages in the crisprVerse
 }

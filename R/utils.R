@@ -2,6 +2,8 @@
 
 #' List all packages in the crisprVerse
 #'
+#' @return A character vector of packages in the crisprVerse
+#' 
 #' @param include_self Include crisprVerse in the list?
 #' @export
 #' @importFrom utils packageDescription
