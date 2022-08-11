@@ -48,14 +48,14 @@ crisprVerse_update()
 The following packages are installed and loaded with the `crisprVerse`
 package:
 
--   [crisprBase](https://github.com/Jfortin1/crisprBase) to specify and
-    manipulate CRISPR nucleases.
--   [crisprBowtie](https://github.com/Jfortin1/crisprBowtie) to perform
-    gRNA spacer sequence alignment with Bowtie.
--   [crisprScore](https://github.com/Jfortin1/crisprScore) to annotate
-    gRNAs with on-target and off-target scores.
--   [crisprDesign](https://github.com/Jfortin1/crisprDesign) to design
-    and manipulate gRNAs with `GuideSet` objects.
+-   [crisprBase](https://github.com/crisprVerse/crisprBase) to specify
+    and manipulate CRISPR nucleases.
+-   [crisprBowtie](https://github.com/crisprVerse/crisprBowtie) to
+    perform gRNA spacer sequence alignment with Bowtie.
+-   [crisprScore](https://github.com/crisprVerse/crisprScore) to
+    annotate gRNAs with on-target and off-target scores.
+-   [crisprDesign](https://github.com/crisprVerse/crisprDesign) to
+    design and manipulate gRNAs with `GuideSet` objects.
 
 # Reproducibility
 
@@ -78,10 +78,10 @@ sessionInfo()
     ## [1] stats     graphics  grDevices utils     datasets  methods   base     
     ## 
     ## other attached packages:
-    ##  [1] crisprDesign_0.99.115 crisprScore_1.1.13    crisprScoreData_1.1.3
+    ##  [1] crisprDesign_0.99.117 crisprScore_1.1.13    crisprScoreData_1.1.3
     ##  [4] ExperimentHub_2.3.5   AnnotationHub_3.3.9   BiocFileCache_2.3.4  
     ##  [7] dbplyr_2.1.1          BiocGenerics_0.42.0   crisprBowtie_1.1.1   
-    ## [10] crisprBase_1.1.3      crisprVerse_0.99.2   
+    ## [10] crisprBase_1.1.5      crisprVerse_0.99.5   
     ## 
     ## loaded via a namespace (and not attached):
     ##   [1] bitops_1.0-7                  matrixStats_0.61.0           
