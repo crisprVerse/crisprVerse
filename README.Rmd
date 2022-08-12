@@ -15,6 +15,10 @@ Date: July 25, 2022
 
 
 
+```{r, show=FALSE, echo=FALSE}
+library(BiocStyle)
+```
+
 # Installation and getting started
 
 The crisprVerse is a collection of packages for CRISPR guide RNA (gRNA) design
@@ -51,13 +55,12 @@ crisprVerse_update()
 
 The following packages are installed and loaded with the `crisprVerse` package: 
 
-
-* [crisprBase](https://github.com/crisprVerse/crisprBase) to specify and manipulate CRISPR nucleases.
-* [crisprBowtie](https://github.com/crisprVerse/crisprBowtie) to perform gRNA spacer sequence
+* `r BiocStyle::Biocpkg("crisprBase")` to specify and manipulate CRISPR nucleases.
+* `r BiocStyle::Biocpkg("crisprBowtie")` to perform gRNA spacer sequence
 alignment with Bowtie.
-* [crisprScore](https://github.com/crisprVerse/crisprScore) to annotate gRNAs with on-target
+* `r BiocStyle::Biocpkg("crisprScore")` to annotate gRNAs with on-target
 and off-target scores.
-* [crisprDesign](https://github.com/crisprVerse/crisprDesign) to design and manipulate gRNAs
+* `r BiocStyle::Biocpkg("crisprDesign")` to design and manipulate gRNAs
 with `GuideSet` objects. 
 
 # Reproducibility
