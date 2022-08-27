@@ -51,6 +51,8 @@ You can check that all crisprVerse packages are up-to-date with
 crisprVerse_update()
 ```
 
+The complete documentation for the package can be found [here](https://bioconductor.org/packages/devel/bioc/manuals/crisprVerse/man/crisprVerse.pdf).
+
 # Components
 
 The following packages are installed and loaded with the `crisprVerse` package: 
