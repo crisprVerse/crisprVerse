@@ -18,13 +18,14 @@ design that can easily be installed with the `crisprVerse` package. This
 provides a convenient way of downloading and installing all crisprVerse
 packages with a single R command.
 
-The package can be installed from Bioconductor using the following
-commands in an R session:
+The package can be installed from the Bioconductor devel branch using
+the following commands in an R session:
 
 ``` r
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
+BiocManager::install(version="devel")
 BiocManager::install("crisprVerse")
 ```
 
@@ -42,7 +43,12 @@ You can check that all crisprVerse packages are up-to-date with
 crisprVerse_update()
 ```
 
-    ## All crisprVerse packages up-to-date
+    ## The following package is out of date:
+    ## 
+    ## • crisprDesign (0.99.134 -> 0.99.135)
+    ## 
+    ## Start a clean R session then run:
+    ## BiocManager::install("crisprDesign")
 
 The complete documentation for the package can be found
 [here](https://bioconductor.org/packages/devel/bioc/manuals/crisprVerse/man/crisprVerse.pdf).
@@ -82,7 +88,7 @@ sessionInfo()
     ## [1] stats     graphics  grDevices utils     datasets  methods   base     
     ## 
     ## other attached packages:
-    ##  [1] crisprDesign_0.99.133 crisprScore_1.1.14    crisprScoreData_1.1.3
+    ##  [1] crisprDesign_0.99.134 crisprScore_1.1.14    crisprScoreData_1.1.3
     ##  [4] ExperimentHub_2.5.0   AnnotationHub_3.5.0   BiocFileCache_2.5.0  
     ##  [7] dbplyr_2.2.1          BiocGenerics_0.43.1   crisprBowtie_1.1.1   
     ## [10] crisprBase_1.1.5      crisprVerse_0.99.8    BiocStyle_2.25.0     
@@ -102,7 +108,7 @@ sessionInfo()
     ##  [23] randomForest_4.7-1.1          readr_2.1.2                  
     ##  [25] rappdirs_0.3.3                stringr_1.4.1                
     ##  [27] digest_0.6.29                 Rsamtools_2.13.4             
-    ##  [29] rmarkdown_2.15.2              basilisk_1.9.2               
+    ##  [29] rmarkdown_2.15.2              basilisk_1.9.3               
     ##  [31] XVector_0.37.0                pkgconfig_2.0.3              
     ##  [33] htmltools_0.5.3               MatrixGenerics_1.9.1         
     ##  [35] fastmap_1.1.0                 BSgenome_1.65.2              

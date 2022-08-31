@@ -26,13 +26,14 @@ that can easily be installed with the `crisprVerse` package. This provides
 a convenient way of downloading and installing all crisprVerse packages 
 with a single R command. 
 
-The package can be installed from Bioconductor using the following
-commands in an R session:
+The package can be installed from the Bioconductor devel branch using
+the following commands in an R session:
 
 ```{r, eval=FALSE}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
+BiocManager::install(version="devel")
 BiocManager::install("crisprVerse")
 ```
 
