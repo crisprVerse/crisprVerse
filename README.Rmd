@@ -65,6 +65,7 @@ alignment with Bowtie.
 and off-target scores.
 * `r BiocStyle::Biocpkg("crisprDesign")` to design and manipulate gRNAs
 with `GuideSet` objects. 
+* `r BiocStyle::Biocpkg("crisprViz")` to visualize gRNAs.
 
 # Reproducibility
 

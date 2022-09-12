@@ -3,7 +3,8 @@ context("test-crisprVerse.R")
 core <- c("crisprBase",
           "crisprBowtie",
           "crisprScore",
-          "crisprDesign")
+          "crisprDesign",
+          "crisprViz")
 
 test_that("crisprVerse packages returns character vector of package names", {
     out <- crisprVerse_packages(include_self=FALSE)

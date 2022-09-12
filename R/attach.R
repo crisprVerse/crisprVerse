@@ -3,7 +3,8 @@
 core <- c("crisprBase",
           "crisprBowtie",
           "crisprScore",
-          "crisprDesign")
+          "crisprDesign",
+          "crisprViz")
 
 core_unloaded <- function(){
     search <- paste0("package:", core)

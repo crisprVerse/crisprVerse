@@ -6,4 +6,5 @@
 #' @importFrom crisprBowtie runBowtie
 #' @importFrom crisprBase cutSites
 #' @importFrom crisprScore getAzimuthScores
+#' @importFrom crisprViz plotGuideSet
 NULL

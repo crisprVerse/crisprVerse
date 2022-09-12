@@ -1,6 +1,6 @@
 Package: crisprVerse
 Title: Easily install and load the crisprVerse ecosystem for CRISPR gRNA design
-Version: 0.99.8
+Version: 0.99.9
 Authors@R: c(
     person("Jean-Philippe", "Fortin", email = "fortin946@gmail.com", role = c("aut", "cre"))
     )
@@ -19,6 +19,7 @@ Imports:
     crisprBowtie,
     crisprScore,
     crisprDesign,
+    crisprViz,
     rlang,
     tools,
     utils
