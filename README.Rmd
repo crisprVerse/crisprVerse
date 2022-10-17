@@ -21,8 +21,8 @@ library(BiocStyle)
 
 # Installation and getting started
 
-The crisprVerse is a collection of packages for CRISPR guide RNA (gRNA) design
-that can easily be installed with the `crisprVerse` package. This provides 
+The [crisprVerse](https://github.com/crisprVerse) is a collection of packages for CRISPR guide RNA (gRNA) design that can easily be installed 
+with the `crisprVerse` package. This provides 
 a convenient way of downloading and installing all crisprVerse packages 
 with a single R command. 
 
