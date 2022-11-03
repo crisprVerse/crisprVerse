@@ -3,6 +3,7 @@
 core <- c("crisprBase",
           "crisprBowtie",
           "crisprScore",
+          "crisprScoreData",
           "crisprDesign",
           "crisprViz")
 

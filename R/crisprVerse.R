@@ -6,5 +6,6 @@
 #' @importFrom crisprBowtie runBowtie
 #' @importFrom crisprBase cutSites
 #' @importFrom crisprScore getAzimuthScores
+#' @importFrom crisprScoreData Model_weights.pkl
 #' @importFrom crisprViz plotGuideSet
 NULL

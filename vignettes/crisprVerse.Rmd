@@ -59,6 +59,7 @@ The following packages are installed and loaded with the `crisprVerse` package:
 alignment with Bowtie.
 * `r BiocStyle::Biocpkg("crisprScore")` to annotate gRNAs with on-target
 and off-target scores.
+* `r BiocStyle::Biocpkg("crisprScoreData")` pre-trained data for crisprScore
 * `r BiocStyle::Biocpkg("crisprDesign")` to design and manipulate gRNAs
 with `GuideSet` objects. 
 * `r BiocStyle::Biocpkg("crisprViz")` to visualize gRNAs.

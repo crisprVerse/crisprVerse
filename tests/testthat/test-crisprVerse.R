@@ -3,6 +3,7 @@ context("test-crisprVerse.R")
 core <- c("crisprBase",
           "crisprBowtie",
           "crisprScore",
+          "crisprScoreData",
           "crisprDesign",
           "crisprViz")
 
